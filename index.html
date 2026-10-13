@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profil Kantor Notaris</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+    <img src="logo.png" alt="Logo Kantor">
+    <div class="logo-text">
+        <h2>NOTARIS & PPAT</h2>
+        <p>RAMADANI APRILIANTO, S.H., M.Kn.</p>
+    </div>
+</div>
+
+        <nav>
+            <a href="#beranda">Beranda</a>
+            <a href="#profil">Profil</a>
+            <a href="#layanan">Layanan</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- BAGIAN BERANDA -->
+<section id="beranda" class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <p class="label">
+            LAYANAN PROFESIONAL
+        </p>
+
+        <h1>
+            Solusi Layanan
+            <br>
+            Kenotariatan Anda
+        </h1>
+
+        <p class="hero-description">
+            Informasi layanan kenotariatan yang jelas,
+            profesional, dan mudah diakses.
+        </p>
+
+        <a href="#kontak" class="tombol">
+            <span>☏</span>
+            Hubungi Kami
+            <span>→</span>
+        </a>
+
+    </div>
+
+    <!-- INFORMASI DI BAGIAN BAWAH -->
+    <div class="hero-features">
+
+        <div class="feature">
+            <span class="feature-number">01</span>
+
+            <h3>Profesional & Terpercaya</h3>
+
+            <p>
+                Mengutamakan profesionalisme,
+                ketelitian, dan integritas.
+            </p>
+        </div>
+
+        <div class="feature">
+            <span class="feature-number">02</span>
+
+            <h3>Layanan Kenotariatan</h3>
+
+            <p>
+                Informasi layanan yang jelas
+                untuk kebutuhan Anda.
+            </p>
+        </div>
+
+        <div class="feature">
+            <span class="feature-number">03</span>
+
+            <h3>Mudah Diakses</h3>
+
+            <p>
+                Temukan informasi kantor
+                dan cara menghubungi kami.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+        <section id="profil" class="profil-kantor">
+    <div class="profil-heading">
+        <span>PROFIL KANTOR</span>
+        <h2>Notaris &amp; PPAT RAMADANI</h2>
+        <p>Mengenal profil notaris dan informasi pengangkatan resmi.</p>
+    </div>
+
+    <div class="profil-container">
+
+        <!-- Profil Notaris -->
+        <div class="profil-orang">
+            <img src="profil-notaris.jpg" alt="Foto Notaris Ramadani Aprilianto">
+
+            <h3>Ramadani Aprilianto, S.H., M.Kn.</h3>
+
+            <p class="jabatan">Notaris Kabupaten Brebes</p>
+
+            <p>
+                Notaris yang berkedudukan di Kabupaten Brebes,
+                dengan wilayah jabatan Provinsi Jawa Tengah.
+            </p>
+        </div>
+
+        <!-- Informasi SK -->
+        <div class="profil-informasi">
+            <h3>Informasi Pengangkatan Notaris</h3>
+
+            <div class="info-item">
+                <span>Nama Notaris</span>
+                <p>Ramadani Aprilianto, S.H., M.Kn.</p>
+            </div>
+
+            <div class="info-item">
+                <span>Nomor Surat Keputusan</span>
+                <p>AHU-00720.AH.02.01.TAHUN 2021</p>
+            </div>
+
+            <div class="info-item">
+                <span>Tanggal Penetapan</span>
+                <p>5 November 2021</p>
+            </div>
+
+            <div class="info-item">
+                <span>Kedudukan</span>
+                <p>Kabupaten Brebes, Jawa Tengah</p>
+            </div>
+
+            <div class="info-item">
+                <span>Wilayah Jabatan</span>
+                <p>Provinsi Jawa Tengah</p>
+            </div>
+
+            <button
+                type="button"
+                class="tombol-sk"
+                onclick="bukaDokumenSK()">
+                Baca Surat Keputusan
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Pembaca dokumen SK -->
+    <div id="pembaca-sk" class="pembaca-sk" hidden>
+        <div class="pembaca-header">
+            <h3>Surat Keputusan Pengangkatan Notaris</h3>
+
+            <button
+                type="button"
+                onclick="tutupDokumenSK()">
+                Tutup ✕
+            </button>
+        </div>
+
+        <iframe
+            id="frame-sk"
+            title="Dokumen Surat Keputusan Pengangkatan Notaris"
+            src=""
+            loading="lazy">
+        </iframe>
+    </div>
+</section>
+
+        <!-- BAGIAN LAYANAN KAMI -->
+<section id="layanan" class="layanan-section">
+
+    <div class="layanan-heading">
+        <p class="label-layanan">LAYANAN KAMI</p>
+
+        <h2>Layanan Hukum untuk Berbagai Kebutuhan</h2>
+
+        <p class="deskripsi-layanan">
+            Kami menyediakan informasi layanan kenotariatan,
+            badan usaha, dan pertanahan. Hubungi kantor kami
+            untuk konsultasi mengenai dokumen, persyaratan,
+            proses, dan biaya layanan.
+        </p>
+    </div>
+
+    <!-- KATEGORI LAYANAN -->
+    <div class="layanan-grid">
+
+        <!-- KATEGORI 1 -->
+        <article class="layanan-card">
+
+            <div class="layanan-icon">⚖</div>
+
+            <h3>Layanan Kenotariatan</h3>
+
+            <p>
+                Layanan pembuatan akta autentik dan dokumen
+                hukum sesuai kewenangan notaris.
+            </p>
+
+            <ul>
+                <li>Akta Jual Beli (AJB)</li>
+                <li>Akta Pemberian Hak Tanggungan (APHT)</li>
+                <li>Surat Kuasa Membebankan Hak Tanggungan (SKMHT)</li>
+                <li>Akta perjanjian dan kuasa</li>
+                <li>Akta terkait kebutuhan perbankan</li>
+            </ul>
+
+            <p class="biaya-info">
+                Biaya menyesuaikan jenis akta,
+                nilai transaksi, dan kebutuhan dokumen.
+            </p>
+
+            <a
+                href="#kontak"
+                class="layanan-button"
+                onclick="pilihLayanan('Layanan Kenotariatan')"
+            >
+                Detail & Tanya Biaya →
+            </a>
+
+        </article>
+
+
+        <!-- KATEGORI 2 -->
+        <article class="layanan-card">
+
+            <div class="layanan-icon">▤</div>
+
+            <h3>Layanan Badan Usaha</h3>
+
+            <p>
+                Pendampingan pembuatan akta dan pengurusan
+                administrasi badan usaha sesuai ketentuan.
+            </p>
+
+            <ul>
+                <li>Pendirian Commanditaire Vennootschap (CV)</li>
+                <li>Pembuatan akta pendirian CV</li>
+                <li>Pendirian Perseroan Terbatas (PT)</li>
+                <li>Perubahan data dan anggaran dasar</li>
+                <li>Akta perubahan badan usaha</li>
+            </ul>
+
+            <p class="biaya-info">
+                Biaya bergantung pada jenis badan usaha,
+                akta, dan administrasi yang diperlukan.
+            </p>
+
+            <a
+                href="#kontak"
+                class="layanan-button"
+                onclick="pilihLayanan('Layanan Badan Usaha')"
+            >
+                Detail & Tanya Biaya →
+            </a>
+
+        </article>
+
+
+        <!-- KATEGORI 3 -->
+        <article class="layanan-card">
+
+            <div class="layanan-icon">⌂</div>
+
+            <h3>Layanan Pertanahan</h3>
+
+            <p>
+                Informasi layanan terkait dokumen,
+                peralihan hak, dan administrasi pertanahan.
+            </p>
+
+            <ul>
+                <li>Akta terkait peralihan hak atas tanah</li>
+                <li>Balik nama sertifikat</li>
+                <li>Pengecekan sertifikat</li>
+                <li>Pemecahan atau penggabungan bidang tanah</li>
+                <li>Pengurusan dokumen pertanahan lainnya</li>
+            </ul>
+
+            <p class="biaya-info">
+                Biaya bergantung pada jenis layanan,
+                kondisi dokumen, dan ketentuan yang berlaku.
+            </p>
+
+            <a
+                href="#kontak"
+                class="layanan-button"
+                onclick="pilihLayanan('Layanan Pertanahan')"
+            >
+                Detail & Tanya Biaya →
+            </a>
+
+        </article>
+
+    </div>
+
+    <div class="catatan-layanan">
+        <strong>Informasi biaya:</strong>
+        biaya akhir dikonfirmasi oleh kantor setelah
+        jenis layanan, dokumen, dan kebutuhan pemohon
+        diperiksa. Tidak semua layanan pertanahan
+        dilakukan langsung oleh notaris.
+    </div>
+
+</section>
+
+        <section id="kontak">
+            <a
+    href="https://wa.me/6285647773370"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="tombol-whatsapp">
+    Hubungi Kami via WhatsApp
+</a>
+            
+            <p>Alamat: Jalan Raya Timur,Desa Karanglo,Kecamatan Jatibarang,Kabupaten Brebes</p>
+            <p>Telepon: 085647773370</p>
+
+            <button id="tombolKontak">
+                Lihat Informasi Kontak
+            </button>
+
+            <p id="pesanKontak"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="tahun"></span> -RAMADANI APRILIANTO,S.H.,M.Kn.</p>
+    </footer>
+
+</body>
+</html>

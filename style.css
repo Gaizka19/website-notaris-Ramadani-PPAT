@@ -1,0 +1,1111 @@
+/* PENGATURAN DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #27364b;
+    line-height: 1.7;
+    background: #ffffff;
+}
+
+/* HEADER */
+header {
+    background: #102844;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo h2 {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.logo p {
+    color: #d9bb7a;
+    font-size: 13px;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #d9bb7a;
+}
+
+/* BERANDA */
+.hero {
+    background: linear-gradient(
+        120deg,
+        #f8f4eb,
+        #eee5d3
+    );
+    padding: 110px 8%;
+    min-height: 470px;
+}
+
+.label {
+    color: #98753a;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    max-width: 700px;
+    color: #102844;
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.hero p {
+    max-width: 600px;
+    margin-bottom: 25px;
+    color: #586579;
+}
+
+/* TOMBOL */
+.tombol,
+button {
+    display: inline-block;
+    background: #102844;
+    color: white;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.tombol:hover,
+button:hover {
+    background: #98753a;
+}
+
+/* BAGIAN WEBSITE */
+section:not(.hero) {
+    padding: 80px 8%;
+}
+
+section h2 {
+    color: #102844;
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+/* LAYANAN */
+#layanan {
+    background: #f7f8fa;
+}
+
+.daftar-layanan {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.kartu {
+    background: white;
+    padding: 30px;
+    border: 1px solid #e1e5eb;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.kartu:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(16, 40, 68, 0.08);
+}
+
+.kartu h3 {
+    color: #102844;
+    margin-bottom: 12px;
+}
+
+/* KONTAK */
+#kontak {
+    background: #f8f4eb;
+}
+
+#pesanKontak {
+    margin-top: 15px;
+    color: #102844;
+}
+
+/* FOOTER */
+footer {
+    background: #102844;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 13px;
+}
+
+/* RESPONSIVE UNTUK HP */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 70px 7%;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    section:not(.hero) {
+        padding: 50px 7%;
+    }
+
+    .daftar-layanan {
+        grid-template-columns: 1fr;
+    }
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.logo-text h2 {
+    font-size: 20px;
+}
+
+.logo-text p {
+    color: #d9bb7a;
+    font-size: 12px;
+}
+/* TAMPILAN BERANDA */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 80px 8%;
+    min-height: 550px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: 44px;
+    line-height: 1.2;
+    margin: 20px 0;
+    color: #102844;
+}
+
+.hero-description {
+    margin-bottom: 25px;
+    color: #586579;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 480px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(16, 40, 68, 0.15);
+}
+
+/* TAMPILAN HP */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        padding: 50px 7%;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: none;
+    }
+
+    .hero-image img {
+        height: 250px;
+    }
+}
+/* ==================================
+   DESAIN BERANDA NOTARIS RAMADANI
+================================== */
+
+.hero {
+    position: relative;
+    min-height: 720px;
+    padding: 100px 6% 220px;
+
+    display: flex;
+    align-items: center;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(5, 24, 45, 0.97) 0%,
+            rgba(5, 24, 45, 0.80) 40%,
+            rgba(5, 24, 45, 0.10) 100%
+        ),
+        url("images/hero-notaris.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    overflow: hidden;
+}
+
+/* LAPISAN GELAP DI ATAS GAMBAR */
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        0deg,
+        rgba(5, 24, 45, 0.60),
+        transparent 55%
+    );
+
+    pointer-events: none;
+}
+
+/* KONTEN UTAMA */
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 720px;
+}
+
+.hero .label {
+    color: #e8c477;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 4px;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    color: #ffffff;
+    font-size: clamp(40px, 5vw, 68px);
+    font-weight: 800;
+    line-height: 1.12;
+
+    margin-bottom: 25px;
+}
+
+.hero .hero-description {
+    max-width: 550px;
+
+    color: #f1f3f6;
+    font-size: 18px;
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+/* TOMBOL HUBUNGI KAMI */
+
+.hero .tombol {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    background: #edc778;
+    color: #102844;
+
+    padding: 17px 28px;
+    border-radius: 40px;
+
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.hero .tombol:hover {
+    background: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* TIGA KARTU INFORMASI */
+
+.hero-features {
+    position: absolute;
+    z-index: 3;
+
+    left: 6%;
+    right: 6%;
+    bottom: 25px;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    background: rgba(7, 14, 22, 0.88);
+    backdrop-filter: blur(10px);
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.feature {
+    padding: 25px 30px;
+    border-right: 1px solid rgba(255, 255, 255, 0.20);
+}
+
+.feature:last-child {
+    border-right: none;
+}
+
+.feature-number {
+    display: block;
+
+    color: #edc778;
+    font-size: 22px;
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+.feature h3 {
+    color: #ffffff;
+    font-size: 17px;
+
+    margin-bottom: 8px;
+}
+
+.feature p {
+    color: #e1e5eb;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* HEADER WEBSITE */
+
+header {
+    position: relative;
+    z-index: 10;
+}
+
+/* TAMPILAN TABLET DAN HP */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: auto;
+        padding: 75px 7% 30px;
+
+        display: block;
+        background-position: center;
+    }
+
+    .hero h1 {
+        font-size: 39px;
+    }
+
+    .hero .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-features {
+        position: relative;
+
+        left: auto;
+        right: auto;
+        bottom: auto;
+
+        margin-top: 65px;
+
+        grid-template-columns: 1fr;
+    }
+
+    .feature {
+        padding: 22px;
+        border-right: none;
+        border-bottom: 1px solid
+            rgba(255, 255, 255, 0.20);
+    }
+
+    .feature:last-child {
+        border-bottom: none;
+    }
+
+}
+/* HEADER PROFESIONAL */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+
+    padding: 18px 6%;
+    background: #071e38;
+    color: #ffffff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.logo-text h2 {
+    color: #ffffff;
+    font-size: 21px;
+}
+
+.logo-text p {
+    color: #edc778;
+    font-size: 13px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #edc778;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo-text h2 {
+        font-size: 17px;
+    }
+}
+/* ====================================
+   PERBAIKAN BACKGROUND BERANDA
+==================================== */
+
+section.hero {
+    position: relative;
+    isolation: isolate;
+    min-height: 720px;
+
+    padding: 100px 6% 230px;
+
+    display: flex;
+    align-items: center;
+
+    /* Warna cadangan jika gambar gagal dimuat */
+    background-color: #102844;
+
+    /* Foto dan lapisan warna */
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(8, 25, 45, 0.92) 0%,
+            rgba(8, 25, 45, 0.72) 48%,
+            rgba(8, 25, 45, 0.20) 100%
+        ),
+        url("./hero-notaris.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: #ffffff;
+    overflow: hidden;
+}
+
+/* Judul utama */
+
+section.hero h1 {
+    color: #ffffff;
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.12;
+    font-weight: 800;
+    max-width: 750px;
+}
+
+/* Tulisan kecil di atas judul */
+
+section.hero .label {
+    color: #f4ca78;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+/* Deskripsi */
+
+section.hero .hero-description {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 560px;
+}
+
+/* Tombol */
+
+section.hero .tombol {
+    background-color: #f4ca78;
+    color: #102844;
+    font-weight: 700;
+    border: none;
+}
+
+section.hero .tombol:hover {
+    background-color: #ffffff;
+    color: #102844;
+}
+
+/* Kartu informasi di bagian bawah */
+
+section.hero .hero-features {
+    background-color: rgba(5, 17, 31, 0.94);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+section.hero .feature h3 {
+    color: #ffffff;
+}
+
+section.hero .feature p {
+    color: #e0e7ef;
+}
+
+section.hero .feature-number {
+    color: #f4ca78;
+}
+
+/* Tampilan HP */
+
+@media (max-width: 768px) {
+    section.hero {
+        min-height: auto;
+        padding: 70px 7% 30px;
+        background-position: center;
+    }
+
+    section.hero h1 {
+        font-size: 38px;
+    }
+
+    section.hero .hero-features {
+        position: relative;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        margin-top: 60px;
+        grid-template-columns: 1fr;
+    }
+}
+/* ===================================
+   WARNA SETIAP BAGIAN WEBSITE
+=================================== */
+
+/* PROFIL KANTOR */
+#profil {
+    background-color: #f5f0e6;
+    color: #24364b;
+    padding: 80px 8%;
+}
+
+#profil h2 {
+    color: #102844;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+#profil p {
+    color: #455468;
+    line-height: 1.9;
+    font-size: 17px;
+}
+
+/* LAYANAN KAMI */
+#layanan {
+    background-color: #ffffff;
+    color: #24364b;
+    padding: 80px 8%;
+}
+
+#layanan h2 {
+    color: #102844;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* KARTU LAYANAN */
+#layanan .card,
+#layanan .service-card {
+    background-color: #f5f0e6;
+    color: #24364b;
+    border: 1px solid #e5dccb;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+/* KONTAK */
+#kontak {
+    background-color: #102844;
+    color: #ffffff;
+    padding: 80px 8%;
+}
+
+#kontak h2 {
+    color: #f4ca78;
+    font-size: 36px;
+}
+
+#kontak p {
+    color: #ffffff;
+    line-height: 1.8;
+}
+
+/* JUDUL BAGIAN */
+#profil h2,
+#layanan h2 {
+    font-weight: 700;
+}
+
+/* JARAK ANTARBAGIAN */
+#profil,
+#layanan,
+#kontak {
+    scroll-margin-top: 20px;
+}
+/* ==================================
+   KATALOG LAYANAN KANTOR NOTARIS
+================================== */
+
+.layanan-section {
+    background: #f4f0e7;
+    padding: 90px 7%;
+    color: #24364b;
+}
+
+.layanan-heading {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.label-layanan {
+    color: #a47c35;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.layanan-heading h2 {
+    color: #102844;
+    font-size: clamp(30px, 4vw, 42px);
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+.deskripsi-layanan {
+    color: #586579;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* SUSUNAN KARTU */
+
+.layanan-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    align-items: stretch;
+}
+
+.layanan-card {
+    display: flex;
+    flex-direction: column;
+
+    padding: 32px 26px;
+
+    background: #ffffff;
+    border: 1px solid #e4dccd;
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(16, 40, 68, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.layanan-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 16px 35px rgba(16, 40, 68, 0.12);
+}
+
+/* IKON */
+
+.layanan-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 58px;
+    height: 58px;
+
+    margin-bottom: 24px;
+
+    background: #102844;
+    color: #f4ca78;
+
+    border-radius: 10px;
+    font-size: 28px;
+}
+
+/* JUDUL DAN DESKRIPSI */
+
+.layanan-card h3 {
+    color: #102844;
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.layanan-card > p {
+    color: #586579;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* DAFTAR LAYANAN */
+
+.layanan-card ul {
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.layanan-card li {
+    color: #34465b;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+/* INFORMASI BIAYA */
+
+.layanan-card .biaya-info {
+    margin-top: auto;
+    padding: 15px;
+
+    background: #f7f3ea;
+    border-left: 3px solid #c5a15d;
+
+    color: #34465b;
+    font-size: 13px;
+}
+
+/* TOMBOL */
+
+.layanan-button {
+    display: block;
+    margin-top: 18px;
+
+    padding: 13px 16px;
+
+    background: #102844;
+    color: #ffffff;
+
+    border-radius: 6px;
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: background 0.3s ease;
+}
+
+.layanan-button:hover {
+    background: #a47c35;
+    color: #ffffff;
+}
+
+/* CATATAN */
+
+.catatan-layanan {
+    max-width: 900px;
+    margin: 35px auto 0;
+
+    padding: 20px 24px;
+
+    background: #e8e0d1;
+    border-radius: 8px;
+
+    color: #34465b;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+    .layanan-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 650px) {
+    .layanan-section {
+        padding: 60px 6%;
+    }
+
+    .layanan-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .layanan-card {
+        padding: 27px 23px;
+    }
+
+    .layanan-heading {
+        margin-bottom: 35px;
+    }
+}
+/* PROFIL KANTOR */
+.profil-kantor {
+    padding: 70px 8%;
+    background: #f5f7fa;
+}
+
+.profil-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profil-heading span {
+    color: #b99755;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.profil-heading h2 {
+    color: #102747;
+    font-size: 32px;
+    margin: 12px 0;
+}
+
+.profil-container {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+    align-items: stretch;
+}
+
+.profil-orang,
+.profil-informasi {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.profil-orang {
+    text-align: center;
+}
+
+.profil-orang img {
+    width: 190px;
+    height: 230px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 10px;
+    border: 3px solid #b99755;
+}
+
+.profil-orang h3 {
+    color: #102747;
+    margin-bottom: 8px;
+}
+
+.jabatan {
+    color: #b99755;
+    font-weight: bold;
+}
+
+.profil-informasi h3 {
+    color: #102747;
+    margin-top: 0;
+    border-bottom: 2px solid #b99755;
+    padding-bottom: 15px;
+}
+
+.info-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.info-item span {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.info-item p {
+    color: #172b46;
+    font-weight: 600;
+    margin: 5px 0 0;
+    overflow-wrap: anywhere;
+}
+
+.tombol-sk {
+    background: #102747;
+    color: white;
+    border: none;
+    padding: 13px 20px;
+    margin-top: 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.tombol-sk:hover {
+    background: #b99755;
+}
+
+.pembaca-sk {
+    max-width: 1100px;
+    margin: 35px auto 0;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.pembaca-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px 20px;
+}
+
+.pembaca-header h3 {
+    color: #102747;
+}
+
+.pembaca-header button {
+    padding: 9px 14px;
+    cursor: pointer;
+}
+
+.pembaca-sk iframe {
+    display: block;
+    width: 100%;
+    height: 700px;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .profil-container {
+        grid-template-columns: 1fr;
+    }
+
+    .profil-heading h2 {
+        font-size: 25px;
+    }
+
+    .pembaca-sk iframe {
+        height: 550px;
+    }
+}
+.tombol-whatsapp {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.tombol-whatsapp:hover {
+    background-color: #1da851;
+    transform: translateY(-2px);
+}
